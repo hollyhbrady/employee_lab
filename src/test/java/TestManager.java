@@ -25,6 +25,12 @@ public class TestManager {
     }
 
     @Test
+    public void cantSetNameToNull(){
+        manager.setName(null);
+        assertEquals("Steven", manager.getName());
+    }
+
+    @Test
     public void canGetNInumber(){
         assertEquals("HG896745U", manager.getNInumber());
     }
